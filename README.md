@@ -5,7 +5,7 @@ Freelance Job System is a Java-based desktop application developed using Object-
 Key Features & Workflows Demonstrated:
 <br>
 1)​ Live Job Posting &  Bidding: Clients can instantly publish new jobs, and Freelancers can view and place initial price/duration bids.
-
+<br>
 2) ​Two-Way Negotiation Logic: When a Client places a Counter Offer, the ball shifts to the Freelancer's court to either Accept or Decline. Once accepted, the Client can officially Hire them, making the workflow highly interactive.
 
 3)​ Dynamic Statistics Dashboard: Both Clients and Freelancers have dedicated analytics panels showing real-time stats (Open/Closed Jobs, Pending Bids, Counter Offers, and overall Success Rates).

@@ -7,21 +7,21 @@ public class RegisterForm extends javax.swing.JFrame {
      * Creates new form RegisterForm
      */
     public RegisterForm() {
-        // Constructor ke andar initComponents se pehle yeh paste karein:
+        
         try {
             java.awt.Color lightNudeBeige = new java.awt.Color(242, 230, 218);
             java.awt.Color coffeeBrown = new java.awt.Color(54, 43, 36);
             java.awt.Color terracottaBtn = new java.awt.Color(184, 115, 81);
 
-    // Message box ka background aur panel beige ho jayega
+    //background and panel of msg box will be beige
             javax.swing.UIManager.put("OptionPane.background", lightNudeBeige);
             javax.swing.UIManager.put("Panel.background", lightNudeBeige);
 
-    // Text ka color coffee brown ho jayega
+    //coffee brown color of text
             javax.swing.UIManager.put("OptionPane.messageForeground", coffeeBrown);
             javax.swing.UIManager.put("OptionPane.messageFont", new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 14));
 
-    // OK button terracotta aur white text me badal jayega
+    // terracota and white text for OK btn
             javax.swing.UIManager.put("Button.background", terracottaBtn);
             javax.swing.UIManager.put("Button.foreground", java.awt.Color.WHITE);
             javax.swing.UIManager.put("Button.font", new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 12));
@@ -77,7 +77,7 @@ public class RegisterForm extends javax.swing.JFrame {
         txt_skills.setBackground(java.awt.Color.WHITE);
         jComboBox1.setBackground(java.awt.Color.WHITE);
 
-        // 5. Window center mein open karne ke liye
+        // to open window in centre.
         this.setLocationRelativeTo(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 22));

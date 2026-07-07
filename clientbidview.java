@@ -483,7 +483,7 @@ jScrollPane1.setPreferredSize(new java.awt.Dimension(1240, 350));
                 // Exact tracking using Job ID and Freelancer Email
                 if (data.length >= 6 && data[0].trim().equalsIgnoreCase(jobId) && data[1].trim().equalsIgnoreCase(freelancerEmail)) {
                     
-                    // Agar parameters null hain, toh purani value retain karenge, nahi toh counter value change karenge
+                
                     String finalAmount = (targetAmount != null) ? targetAmount : data[2].trim();
                     String finalDuration = (targetDuration != null) ? targetDuration : data[3].trim();
                     

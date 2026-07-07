@@ -82,13 +82,13 @@ public class FileManagement {
             
             String[] data = line.split(",");
 
-            // Length ko >= 5 kiya taake har haal mein data read ho sake
+    
             if(data.length >= 5){
                 String fileEmail = data[1].trim();
                 String filePassword = data[2].trim();
                 String fileRole = data[4].trim();
 
-                // .equals ko hata kar .equalsIgnoreCase kiya taake space ya casing ka panga hi khatam ho
+                
                 if(fileEmail.equalsIgnoreCase(email.trim())
                         && filePassword.equals(password.trim())
                         && fileRole.equalsIgnoreCase(role.trim())){
@@ -167,7 +167,7 @@ public class FileManagement {
             }
         }
         read.close();
-        System.out.println("-> NO MATCH: Email ya password file se match nahi hua.");
+        System.out.println("-> NO MATCH: email or password doesnt match.");
 
     } catch (Exception e) {
         System.out.println("Exception in getFreelancer: " + e);
@@ -180,22 +180,22 @@ public class FileManagement {
     
     public void loadJobsToTable(DefaultTableModel model) {
         try {
-            File f = new File(this.fileName); // Jo fileName aapne constructor me diya tha
+            File f = new File(this.fileName); 
             if (!f.exists()) {
-                System.out.println("Error: File nahi mili!");
+                System.out.println("Error: File not found!");
                 return;
             }
 
-            // Table ko pehle saaf (clear) karein taake data duplicate na ho
+            
             model.setRowCount(0);
 
             Scanner read = new Scanner(f);
             while (read.hasNextLine()) {
                 String line = read.nextLine().trim();
-                if (line.isEmpty()) continue; // Khali line ko skip karne ke liye
+                if (line.isEmpty()) continue; // to skip empty line
 
-                String[] data = line.split(","); // Comma se data split kiya
-                model.addRow(data); // Direct table me row add kar di
+                String[] data = line.split(","); 
+                model.addRow(data); 
             }
             read.close();
         } catch (Exception e) {
@@ -209,7 +209,7 @@ public class FileManagement {
             File f = new File("users.txt");
 
             if (!f.exists()) {
-                System.out.println("Error: users.txt file nahi mili!");
+                System.out.println("Error: users.txt file not found");
                 return null;
             }
 

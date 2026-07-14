@@ -54,9 +54,8 @@ public class PostJob_Form extends javax.swing.JFrame {
     
     public PostJob_Form(Client client) {
     initComponents();
-    this.client = client;  // use the client passed in, not a new one
+    this.client = client;  
     
-    // copy all your styling code from the existing constructor here
     java.awt.Color lightNudeBeige = new java.awt.Color(242, 230, 218);
     this.getContentPane().setBackground(lightNudeBeige);
     java.awt.Color coffeeBrown = new java.awt.Color(54, 43, 36);

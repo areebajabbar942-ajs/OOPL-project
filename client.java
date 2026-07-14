@@ -37,7 +37,7 @@ public class Client extends User {
     }
     
     public void setName(String name) {
-        this.name = name; // Yeh variable me naya naam daal deta hai
+        this.name = name; 
     }
 
     public String getJobs() {

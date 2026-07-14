@@ -113,8 +113,7 @@ public class ViewJob_Form extends javax.swing.JFrame {
         btn_apply.setPreferredSize(new java.awt.Dimension(200, 36));
         applyRow.add(btn_apply);
         bottomPanel.add(applyRow, bgbc);
-
-        // Row 2: Refresh + Back stacked in left column
+        
         bgbc.gridy = 1;
         bgbc.insets = new java.awt.Insets(0, 0, 0, 0);
         javax.swing.JPanel leftCol = new javax.swing.JPanel(new java.awt.GridLayout(2, 1, 0, 6));
@@ -320,7 +319,6 @@ public class ViewJob_Form extends javax.swing.JFrame {
          populateJobsTable(); 
          colorTableRows(); 
     
-        // Table ke columns ki width set karein taake refresh ke baad layout kharab na ho
         if (JobView_table.getColumnModel().getColumnCount() > 0) {
             JobView_table.getColumnModel().getColumn(0).setPreferredWidth(70);   
             JobView_table.getColumnModel().getColumn(1).setPreferredWidth(220);  

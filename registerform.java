@@ -295,7 +295,7 @@ fm.appendFile(name + "," + Email + "," + Password + "," + phone + "," + role + "
             txt_skills.setText("");
         } 
         catch(Exception e) {
-            // Safe block if txt_skills doesn't exist on Client UI
+            
         }
     }                                            
 

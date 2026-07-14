@@ -248,7 +248,7 @@ public class FileManagement {
                             actualName,      // Name (data[0])
                             fileEmail,       // Email (data[1])
                             filePassword,    // Password (data[2])
-                            companyName   // Company name ya Phone (data[3])
+                            companyName   // Company name or Phone (data[3])
                     );
             
                     }

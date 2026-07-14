@@ -22,15 +22,13 @@ public class LoginForm extends javax.swing.JFrame {
         java.awt.Color coffeeBrown = new java.awt.Color(54, 43, 36);
         java.awt.Color terracottaBtn = new java.awt.Color(184, 115, 81);
 
-        // Background change karne ke liye
+        // change Background 
         javax.swing.UIManager.put("OptionPane.background", lightNudeBeige);
         javax.swing.UIManager.put("Panel.background", lightNudeBeige);
 
-        // Text color coffee brown karne ke liye
         javax.swing.UIManager.put("OptionPane.messageForeground", coffeeBrown);
         javax.swing.UIManager.put("OptionPane.messageFont", new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 14));
 
-        // Button terracotta aur white text karne ke liye
         javax.swing.UIManager.put("Button.background", terracottaBtn);
         javax.swing.UIManager.put("Button.foreground", java.awt.Color.WHITE);
         javax.swing.UIManager.put("Button.font", new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 12));
